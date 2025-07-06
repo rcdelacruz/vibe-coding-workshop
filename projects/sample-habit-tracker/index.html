@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Habits</h1>
+            <p class="date">Today: <span id="current-date"></span></p>
+        </header>
+        
+        <main>
+            <section class="add-habit">
+                <form id="habit-form">
+                    <input 
+                        type="text" 
+                        id="habit-name" 
+                        placeholder="Enter a new habit..." 
+                        required
+                    >
+                    <button type="submit">Add Habit</button>
+                </form>
+            </section>
+            
+            <section class="habits-list">
+                <div id="habits-container">
+                    <!-- Habits will be dynamically added here -->
+                </div>
+            </section>
+            
+            <section class="progress-section">
+                <h2>Progress Overview</h2>
+                <div id="progress-stats">
+                    <!-- Progress stats will be added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="storage.js"></script>
+    <script src="habit-manager.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
